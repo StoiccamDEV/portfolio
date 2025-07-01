@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DEV → PORTFOLIO</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="welcome-overlay" id="welcomeOverlay">
+            <div class="welcome-text">
+                <span class="welcome-line">Desarrollador</span>
+                <span class="welcome-line">Full Stack</span>
+                <span class="welcome-line">Portfolio</span>
+            </div>
+            <div class="welcome-counter" id="welcomeCounter">00</div>
+            <div class="welcome-progress"></div>
+        </div>
+
+        <div class="page-content">
+            <div class="cursor" id="cursor"></div>
+
+            <header class="header">
+                <nav class="nav">
+                    <div class="logo">DEV → PORTFOLIO</div>
+                    <div class="nav-items">
+                        <a href="#work" data-section="2">Work</a>
+                        <a href="#about" data-section="1">About</a>
+                        <a href="#contact" data-section="3">Contact</a>
+                        <div class="status-indicator"></div>
+                    </div>
+                </nav>
+            </header>
+
+            <div class="scroll-indicator">
+                <div class="scroll-dot active" data-section="0"></div>
+                <div class="scroll-dot" data-section="1"></div>
+                <div class="scroll-dot" data-section="2"></div>
+                <div class="scroll-dot" data-section="3"></div>
+            </div>
+
+            <div
+                class="scroll-boundary-indicator"
+                id="scrollBoundaryIndicator"
+            ></div>
+
+            <div class="scroll-container">
+                <section
+                    class="scroll-section section-hero active"
+                    id="home"
+                    data-section="0"
+                >
+                    <div class="hero">
+                        <div class="hero-left">
+                            <div class="hero-number">01</div>
+                            <h1 class="hero-title">
+                                Desarrollador<br />Full Stack
+                            </h1>
+                            <p class="hero-subtitle">
+                                Creando experiencias digitales que trascienden
+                                lo ordinario
+                            </p>
+                            <div class="cta-section">
+                                <button class="cta-button" data-section="2">
+                                    Ver Proyectos
+                                </button>
+                                <span class="arrow">↗</span>
+                            </div>
+                        </div>
+                        <div class="hero-right">
+                            <div class="info-block" data-label="Ubicación">
+                                Ibagué, Colombia<br />
+                                Disponible para proyectos remotos y
+                                colaboraciones internacionales
+                            </div>
+                            <div
+                                class="info-block"
+                                data-label="Especialización"
+                            >
+                                Frontend • Backend • UX/UI<br />
+                                Transformando ideas complejas en soluciones
+                                elegantes y funcionales
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section
+                    class="scroll-section section-skills"
+                    id="about"
+                    data-section="1"
+                >
+                    <div class="skills">
+                        <div class="skills-container">
+                            <div class="skills-header">
+                                <h2 class="section-title">Stack</h2>
+                                <span class="section-number">02</span>
+                            </div>
+                            <div class="skills-grid">
+                                <div class="skill-item">
+                                    JavaScript
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                                <div class="skill-item">
+                                    React
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                                <div class="skill-item">
+                                    Node.js
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-item">
+                                    Python
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-item">
+                                    TypeScript
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-item">
+                                    MongoDB
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-item">
+                                    PostgreSQL
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-item">
+                                    AWS
+                                    <span class="skill-level"
+                                        >Intermediate</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section
+                    class="scroll-section section-projects"
+                    id="work"
+                    data-section="2"
+                >
+                    <div class="projects">
+                        <div class="projects-container">
+                            <div class="projects-header">
+                                <div class="projects-intro">
+                                    <h2 class="projects-title">
+                                        Proyectos<br />Destacados
+                                    </h2>
+                                    <p class="projects-desc">
+                                        Una selección de trabajos que demuestran
+                                        mi capacidad para resolver problemas
+                                        complejos con soluciones técnicas
+                                        innovadoras y diseño centrado en el
+                                        usuario.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="projects-list">
+                                <div class="project-item">
+                                    <span class="project-number">01</span>
+                                    <div class="project-info">
+                                        <h3>E-Commerce Platform</h3>
+                                        <p>
+                                            Plataforma completa de comercio
+                                            electrónico con dashboard
+                                            administrativo, pasarela de pagos y
+                                            análisis en tiempo real.
+                                        </p>
+                                        <div class="project-tech">
+                                            <span class="tech-tag">React</span>
+                                            <span class="tech-tag"
+                                                >Node.js</span
+                                            >
+                                            <span class="tech-tag"
+                                                >MongoDB</span
+                                            >
+                                            <span class="tech-tag">Stripe</span>
+                                        </div>
+                                    </div>
+                                    <span class="project-year">2024</span>
+                                </div>
+                                <div class="project-item">
+                                    <span class="project-number">02</span>
+                                    <div class="project-info">
+                                        <h3>Task Management SaaS</h3>
+                                        <p>
+                                            Aplicación de gestión de tareas con
+                                            colaboración en tiempo real,
+                                            notificaciones push y análisis de
+                                            productividad.
+                                        </p>
+                                        <div class="project-tech">
+                                            <span class="tech-tag">Vue.js</span>
+                                            <span class="tech-tag"
+                                                >Express</span
+                                            >
+                                            <span class="tech-tag"
+                                                >Socket.io</span
+                                            >
+                                            <span class="tech-tag"
+                                                >PostgreSQL</span
+                                            >
+                                        </div>
+                                    </div>
+                                    <span class="project-year">2024</span>
+                                </div>
+                                <div class="project-item">
+                                    <span class="project-number">03</span>
+                                    <div class="project-info">
+                                        <h3>Analytics Dashboard</h3>
+                                        <p>
+                                            Dashboard de análisis de datos con
+                                            visualizaciones interactivas,
+                                            reportes personalizables y machine
+                                            learning integrado.
+                                        </p>
+                                        <div class="project-tech">
+                                            <span class="tech-tag">React</span>
+                                            <span class="tech-tag">D3.js</span>
+                                            <span class="tech-tag">Python</span>
+                                            <span class="tech-tag"
+                                                >FastAPI</span
+                                            >
+                                        </div>
+                                    </div>
+                                    <span class="project-year">2023</span>
+                                </div>
+                                <div class="project-item">
+                                    <span class="project-number">04</span>
+                                    <div class="project-info">
+                                        <h3>Mobile Banking App</h3>
+                                        <p>
+                                            Aplicación móvil de banca digital
+                                            con autenticación biométrica,
+                                            transferencias instantáneas y
+                                            gestión de inversiones.
+                                        </p>
+                                        <div class="project-tech">
+                                            <span class="tech-tag"
+                                                >React Native</span
+                                            >
+                                            <span class="tech-tag"
+                                                >TypeScript</span
+                                            >
+                                            <span class="tech-tag"
+                                                >Firebase</span
+                                            >
+                                            <span class="tech-tag">AWS</span>
+                                        </div>
+                                    </div>
+                                    <span class="project-year">2023</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section
+                    class="scroll-section section-contact"
+                    id="contact"
+                    data-section="3"
+                >
+                    <div class="contact">
+                        <div class="contact-container">
+                            <div class="contact-left">
+                                <h2>Trabajemos<br />Juntos</h2>
+                                <p>
+                                    ¿Tienes un proyecto en mente? Me especializo
+                                    en crear soluciones digitales que impulsan
+                                    el crecimiento empresarial.
+                                </p>
+                                <div class="contact-links">
+                                    <a
+                                        href="mailto:tu@email.com"
+                                        class="contact-link"
+                                    >
+                                        Email <span>↗</span>
+                                    </a>
+                                    <a
+                                        href="https://linkedin.com/in/tu-perfil"
+                                        class="contact-link"
+                                    >
+                                        LinkedIn <span>↗</span>
+                                    </a>
+                                    <a
+                                        href="https://github.com/tu-usuario"
+                                        class="contact-link"
+                                    >
+                                        GitHub <span>↗</span>
+                                    </a>
+                                    <a
+                                        href="tel:+57123456789"
+                                        class="contact-link"
+                                    >
+                                        WhatsApp <span>↗</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="contact-right">
+                                <div class="contact-form">
+                                    <h3>Cuéntame tu proyecto</h3>
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="name">Nombre</label>
+                                            <input
+                                                type="text"
+                                                id="name"
+                                                name="name"
+                                                required
+                                            />
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="email">Email</label>
+                                            <input
+                                                type="email"
+                                                id="email"
+                                                name="email"
+                                                required
+                                            />
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="project"
+                                                >Proyecto</label
+                                            >
+                                            <textarea
+                                                id="project"
+                                                name="project"
+                                                placeholder="Describe tu proyecto, objetivos y cómo puedo ayudarte..."
+                                                required
+                                            ></textarea>
+                                        </div>
+                                        <button
+                                            type="submit"
+                                            class="submit-btn"
+                                        >
+                                            Enviar Mensaje
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="footer">
+                            <p>
+                                &copy; 2025 — Diseñado y desarrollado por Juan
+                                Camilo Bonilla Falla
+                            </p>
+                        </footer>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
